@@ -7,7 +7,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 from tornado.process import task_id
 
-path = os.path.expanduser('~/airflow_hw')
+path = os.path.expanduser('/opt/airflow/plugins')
 # Добавим путь к коду проекта в переменную окружения, чтобы он был доступен python-процессу
 os.environ['PROJECT_PATH'] = path
 # Добавим путь к коду проекта в $PATH, чтобы импортировать функции

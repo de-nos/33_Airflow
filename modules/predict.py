@@ -24,6 +24,7 @@ def load_n_pred(model):
             # print(f"{' '*2}id={form['id']}: {y[0]}")
     return df_res
 
+
 def predict():
     model_filename = f'{path}/data/models/cars_pipe.pkl'
     with open(model_filename, 'rb') as file:
